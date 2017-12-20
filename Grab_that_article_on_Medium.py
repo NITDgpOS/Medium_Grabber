@@ -11,8 +11,6 @@ from selenium.common.exceptions import TimeoutException
 from collections import OrderedDict
 from itertools import repeat
 import winsound
-import time
-
 
 driver = webdriver.Firefox()
 driver.get("https://medium.com/")
