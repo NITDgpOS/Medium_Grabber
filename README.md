@@ -2,7 +2,7 @@
 WHAT IS [MEDIUM](https://medium.com/) :
 
 
-"Medium" is a place to read, write, and interact with the stories that matter most to you. Every day, thousands of voices read, write, and share important stories on Medium.
+**"Medium"** is a place to read, write, and interact with the stories that matter most to you. Every day, thousands of voices read, write, and share important stories on Medium.
 
 ### WHAT DOES THIS PROGRAM BRINGS YOU? :
 
@@ -26,4 +26,4 @@ To run this,
 * Wait a few minutes. You'll be notified by a beep sound when the program finsihes running.
 * Check the output.txt file in the same directory to get the list of articles along with their links.
     
-Now Browse through them and read whichever interests you. Happy Coding.  :sparkles  :)
+Now Browse through them and read whichever interests you. Happy Coding. :sparkles:  :)
