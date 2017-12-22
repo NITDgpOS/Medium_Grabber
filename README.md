@@ -18,10 +18,10 @@ To run this,
 
 
 * Download and paste everything under the same roof.
-* Put in your password in pass.txt and your Email/Phone Number in the code.
-* Install Selenium python package and firefox webdriver.
+* Put in your password in pass.txt and your Email/Phone Number in the space provided in the code.
+* Install Selenium python package and firefox webdriver. Mention it's path or place it in the same directory.
 * Windows: Open command prompt and cd to the directory.
-  Run by typing : "python -mrun Grab_that_article_on_Medium.py
+  Run by typing : "python -mrun Grab_that_article_on_Medium.py"
 * Choose whichever article you want by typing in the number as given in otion listed above.
 * Wait a few minutes. You'll be notified by a beep sound when the program finsihes running.
 * Check the output.txt file in the same directory to get the list of articles along with their links.
