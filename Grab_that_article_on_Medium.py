@@ -1,8 +1,5 @@
 from selenium import webdriver
 import time
-import pyperclip
-import pdfkit
-from bs4 import BeautifulSoup
 from urllib.request import urlopen
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -11,8 +8,6 @@ from selenium.common.exceptions import TimeoutException
 from collections import OrderedDict
 from itertools import repeat
 import winsound
-import time
-
 
 driver = webdriver.Firefox()
 driver.get("https://medium.com/")
