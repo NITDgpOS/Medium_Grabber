@@ -7,7 +7,7 @@ WHAT THE HECK IS [MEDIUM](https://medium.com/) ?
 ### WHAT DOES THIS PROGRAM BRINGS YOU? :
 
 
-This is a automated program that lets you grab the link of any article in medium under any topic just by logging into your Google-linked-medium account.
+This is an automated program that lets you grab the link of any article in medium under any topic just by logging into your Google-linked-medium account.
 
 
 * Provides you with all the articles(of medium) and their links in the same text file(output.txt)
