@@ -1,5 +1,5 @@
 # Grab_article_on_medium 
-WHAT THE HECK IS [MEDIUM](https://medium.com/) ?:
+WHAT THE HECK IS [MEDIUM](https://medium.com/) ?
 
 
 **"Medium"** is a place to read, write, and interact with the stories that matter most to you. Every day, thousands of voices read, write, and share important stories on Medium.
