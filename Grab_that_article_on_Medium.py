@@ -4,12 +4,15 @@ from urllib.request import urlopen
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 import selenium.webdriver.support.expected_conditions as EC
+from selenium.webdriver.firefox.options import Options
 from selenium.common.exceptions import TimeoutException
 from collections import OrderedDict
 from itertools import repeat
 import winsound
 
-driver = webdriver.Firefox()
+options=Options()
+options.headless=True
+driver = webdriver.Firefox(options=options)
 driver.get("https://medium.com/")
 driver.implicitly_wait(10)
 #action = webdriver.ActionChains(driver)
