@@ -16,6 +16,12 @@ This is an automated program that lets you grab the link of any article in mediu
 * Filters the articles and let's you chose what's most important to you.
 
 
+### Requirements :
+
+
+* Selenium (pip install selenium)
+* Web-driver to interface with the chosen browser
+
 To run this,
 
 
