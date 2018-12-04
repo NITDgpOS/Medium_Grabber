@@ -1,4 +1,4 @@
-# Grab_article_on_medium 
+# Medium_Grabber 
 WHAT THE HECK IS [MEDIUM](https://medium.com/) ?
 
 
