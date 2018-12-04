@@ -1,5 +1,4 @@
-# Grab_article_on_medium 
-
+# Medium_Grabber 
 [![Join the chat at https://gitter.im/Medium_Grabber/Lobby](https://badges.gitter.im/Medium_Grabber/Lobby.svg)](https://gitter.im/Medium_Grabber/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 WHAT THE HECK IS [MEDIUM](https://medium.com/) ?
