@@ -8,7 +8,9 @@ from selenium.webdriver.firefox.options import Options
 from selenium.common.exceptions import TimeoutException
 from collections import OrderedDict
 from itertools import repeat
-import winsound
+import platform
+if platform.system()=='Windows':
+    import winsound
 
 options=Options()
 options.headless=True
@@ -31,7 +33,9 @@ time.sleep(3)
 
 user = driver.find_element_by_xpath('//*[@id="identifierId"]')
 # Enter your email or phone number as registered in Medium
-user.send_keys('EMAIL/PHONE NUMBER') # Provide your email or registered phone number here
+with open('user.txt','r') as f:
+    User = f.read().replace('\n','')
+user.send_keys(User) # Provide your email or registered phone number here
 
 nextButton = driver.find_element_by_xpath('//*[@id="identifierNext"]/content')
 nextButton.click()
@@ -76,23 +80,9 @@ except:
     print('Select a valid topic')
 
 if topic == 0:
-    t = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[2]/nav/ul/div/div[2]/div/li[1]/a').click()
-elif topic == 1:
-    t = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[2]/nav/ul/div/div[2]/div/li[2]/a').click()
-elif topic == 2:
-    t = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[2]/nav/ul/div/div[2]/div/li[3]/a').click()
-elif topic == 3:
-    t = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[2]/nav/ul/div/div[2]/div/li[4]/a').click()
-elif topic == 4:
-    t = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[2]/nav/ul/div/div[2]/div/li[5]/a').click()
-elif topic == 5:
-    t = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[2]/nav/ul/div/div[2]/div/li[6]/a').click()
-elif topic == 6:
-    t = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[2]/nav/ul/div/div[2]/div/li[9]/a').click()
-elif topic == 7:
-    t = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[2]/nav/ul/div/div[2]/div/li[10]/a').click()
-elif topic == 8:
-    t = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[2]/nav/ul/div/div[2]/div/li[11]/a').click()
+    t = driver.get("https://medium.com/");
+elif topic<9:
+    t = driver.get("https://medium.com/topic/"+topics[topic]);
 else:
     print('Please select a correct topic.')
 
@@ -101,29 +91,37 @@ print('The list of articles under this topic are saved as output.txt text file :
 print('The program is crawling down the webpage to gather links of around past 50 atricles. This may take around a minute or two.')
 
 # To Scroll to the bottom/ a portion of page
-last_height = 50000
+last_height = 1000
 while True:
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-    time.sleep(5)
+    time.sleep(2)
     new_height = driver.execute_script("return document.body.scrollHeight")
     if new_height >= last_height:
         break
 
 tag = driver.find_elements_by_tag_name('h3')
 tag_len = len(tag)
-
 links = [i.get_attribute('href') for i in driver.find_elements_by_xpath("//a[@data-action-source]")]
 unique_list = list(OrderedDict(zip(links, repeat(None)))) # To remove duplicates from list
 
 f= open("output.txt","a+") # Stores ouput in output.txt in the same file directory
-if tag_len > 0:
+if topic==0:               # Different structure of Home and other topic pages.
+ if tag_len > 0:
     for i,l in zip(range(tag_len), unique_list):
         f.write(time.strftime("%Y-%m-%d %H:%M") + '\n')
         f.write(tag[i].text)
         f.write('\nLink is -->   ' + str(l)  + '\n\n')
+else:
+    for i in range(tag_len):
+        f.write(time.strftime("%Y-%m-%d %H:%M") + '\n')
+        f.write(tag[i].text)
+        l = tag[i].find_element_by_css_selector('a').get_attribute('href');
+        f.write('\nLink is -->   ' + str(l)  + '\n\n')
 
+f.close()
 print('FINISHED! Please check the output.txt file for the links. Happy reading. :) ')
-
+driver.close()
 duration = 2500  # millisecond
 freq = 440  # Hz
-winsound.Beep(freq, duration)
+if platform.system()=='Windows':
+    winsound.Beep(freq, duration)
