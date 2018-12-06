@@ -12,9 +12,30 @@ import platform
 if platform.system()=='Windows':
     import winsound
 
-options=Options()
-options.headless=True
-driver = webdriver.Firefox(options=options)
+while True:
+    print( """Choose the browser you want to use:(Enter the appropriate number)\n
+                1---> firefox \n
+                2---> chrome \n 
+                0--->exit""")
+    choice = int(input())
+
+    if choice==1:
+        options = Options()
+        options.headless = True
+        driver = webdriver.Firefox(options=options)
+        break
+    elif choice==2:
+        options = webdriver.ChromeOptions()
+        options.add_experimental_option("excludeSwitches", ["ignore-certificate-errors"])
+        options.add_argument('--disable-gpu')
+        options.add_argument('--headless')
+        driver = webdriver.Chrome(chrome_options=options)
+        break
+    elif choice==0:
+        quit()
+    else:
+        print("Please enter a valid choice")
+
 driver.get("https://medium.com/")
 driver.implicitly_wait(10)
 #action = webdriver.ActionChains(driver)
@@ -30,7 +51,7 @@ except TimeoutException:
 # You can log-in using google only
 print(" Logging in to Medium by using Google ")
 time.sleep(3)
-
+assert "Sign in – Google accounts" in driver.title
 user = driver.find_element_by_xpath('//*[@id="identifierId"]')
 # Enter your email or phone number as registered in Medium
 with open('user.txt','r') as f:
