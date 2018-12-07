@@ -21,6 +21,7 @@ This is an automated program that lets you grab the link of any article in mediu
 
 * Selenium (``` pip install selenium ```)
 * Web-driver to interface with the chosen browser
+* FPDF (`pip install fpdf`)
 
 To run this,
 
@@ -34,8 +35,10 @@ To run this,
 * Windows: Open command prompt and cd to the directory.
   Run by typing : ``` python -mrun Grab_that_article_on_Medium.py ```
 * Choose whichever article you want by typing in the number as given in options listed.
+* Choose the file format of the output, either PDF or Text.
 * Wait a few minutes. You'll be notified by a beep sound when the program finsihes running.
-* Check the output.txt file in the same directory to get the list of articles along with their links.
+* Check the output.txt file in the same directory to get the list of articles along with their links. If you've chosen PDF, Click on the link of the PDF to directly open it in a browser.
+
 Now Browse through them and read whichever interests you.
 
 #### For Linux/Unix
@@ -48,9 +51,14 @@ Now Browse through them and read whichever interests you.
   Run by typing : ``` python Grab_that_article_on_Medium.py ```
 * Choose whichever article you want by typing in the number as given in options listed.
 ![Example of execution](/images/run.png)
+* Choose the file format of the output, either PDF or Text.
 * Wait a few minutes. You'll be notified by a beep sound when the program finsihes running.
-* Check the output.txt file in the same directory to get the list of articles along with their links.
+* Check the output.txt file in the same directory to get the list of articles along with their links. If you've chosen PDF, Click on the link of the PDF to directly open it in a browser.
 ![Example of output](/images/output.png)
+
+The links inside the pdf will be displayed as shown below: 
+
+![Example of output](/images/output_pdf.PNG)
 
 
 Happy Coding. :sparkles:  :)
