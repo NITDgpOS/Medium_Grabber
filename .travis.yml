@@ -6,3 +6,5 @@ python:
 
 install :
   - pip install selenium
+  - pip install urllib3
+  - install fpdf
