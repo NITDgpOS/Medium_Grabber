@@ -33,13 +33,14 @@ To run this,
 * Put your password in pass.txt and your Email/Phone Number in the space provided in the code.
 * Install Selenium python package and firefox webdriver for Windows from [here](https://github.com/mozilla/geckodriver/releases). Mention it's path in the code or place it in the same directory.
 * Windows: Open command prompt and cd to the directory.
-  Run by typing : ``` python -mrun Grab_that_article_on_Medium.py ```
-* Choose whichever article you want by typing in the number as given in options listed.
+  Run by typing : ``` python -mrun web_app.py ```
+* Open your browser and go to "http://127.0.0.1:1234/".
+* Choose the topic of articles you want as given in the drop-down list.
 * Choose the file format of the output, either PDF or Text.
+* Click on 'Submit' button.
 * Wait a few minutes. You'll be notified by a beep sound when the program finsihes running.
-* Check the output.txt file in the same directory to get the list of articles along with their links. If you've chosen PDF, Click on the link of the PDF to directly open it in a browser.
 
-Now Browse through them and read whichever interests you.
+Now browse through the articles and read whichever interests you.
 
 #### For Linux/Unix
 
@@ -48,17 +49,15 @@ Now Browse through them and read whichever interests you.
 * Put your password in pass.txt and your Email/Phone Number in the space provided in the code.
 * Install Selenium python package and firefox webdriver for suitable version of Linux from [here](https://github.com/mozilla/geckodriver/releases). Mention it's path in the code or place it in the same directory.
 * Open Terminal in the directory of the repository.
-  Run by typing : ``` python Grab_that_article_on_Medium.py ```
-* Choose whichever article you want by typing in the number as given in options listed.
-![Example of execution](/images/run.png)
+  Run by typing : ``` python web_app.py ```
+* Open your browser and go to "http://127.0.0.1:1234/".
+* Choose the topic of articles you want as given in the drop-down list.
 * Choose the file format of the output, either PDF or Text.
-* Wait a few minutes. You'll be notified by a beep sound when the program finsihes running.
-* Check the output.txt file in the same directory to get the list of articles along with their links. If you've chosen PDF, Click on the link of the PDF to directly open it in a browser.
-![Example of output](/images/output.png)
+* Click on 'Submit' button.
+* Wait a few minutes.
 
-The links inside the pdf will be displayed as shown below: 
+![Animation](/animation.gif)
 
-![Example of output](/images/output_pdf.PNG)
-
-
+Now browse through the articles and read whichever interests you.
 Happy Coding. :sparkles:  :)
+

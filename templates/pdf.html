@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+	Happy reading. :)
+{% endblock %}
+
+{% block body %}
+<div class="col-sm-12">
+	<embed src="/static/output.pdf" width="1100px" height="400px" />
+	<a href="{{url_for('index')}}" style="text-decoration: none;"><h3>Go Back</h3></a>
+</div>
+{% endblock %}
