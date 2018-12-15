@@ -23,7 +23,6 @@ This is an automated program that lets you grab the link of any article in mediu
 * Web-driver to interface with the chosen browser
 * FPDF (`pip install fpdf`)
 
-
 To run this,
 
 #### For Windows
