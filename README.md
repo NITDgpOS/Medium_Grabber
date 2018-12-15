@@ -19,20 +19,46 @@ This is an automated program that lets you grab the link of any article in mediu
 ### Requirements :
 
 
-* Selenium (pip install selenium)
+* Selenium (``` pip install selenium ```)
 * Web-driver to interface with the chosen browser
+* FPDF (`pip install fpdf`)
 
 
 To run this,
 
+#### For Windows
+
+* Download and paste everything under the same roof.
+* Put your password in pass.txt and your Email/Phone Number in the user.txt file.
+* Install Selenium python package and firefox/chrome webdriver. Mention it's path or place it in the same directory.
+* Put your password in pass.txt and your Email/Phone Number in the space provided in the code.
+* Install Selenium python package and firefox webdriver for Windows from [here](https://github.com/mozilla/geckodriver/releases). Mention it's path in the code or place it in the same directory.
+* Windows: Open command prompt and cd to the directory.
+  Run by typing : ``` python -mrun web_app.py ```
+* Open your browser and go to "http://127.0.0.1:1234/".
+* Choose the topic of articles you want as given in the drop-down list.
+* Choose the file format of the output, either PDF or Text.
+* Click on 'Submit' button.
+* Wait a few minutes. You'll be notified by a beep sound when the program finsihes running.
+
+Now browse through the articles and read whichever interests you.
+
+#### For Linux/Unix
+
 
 * Download and paste everything under the same roof.
 * Put your password in pass.txt and your Email/Phone Number in the space provided in the code.
-* Install Selenium python package and firefox webdriver. Mention it's path or place it in the same directory.
-* Windows: Open command prompt and cd to the directory.
-  Run by typing : "python -mrun Grab_that_article_on_Medium.py"
-* Choose whichever article you want by typing in the number as given in options listed.
-* Wait a few minutes. You'll be notified by a beep sound when the program finsihes running.
-* Check the output.txt file in the same directory to get the list of articles along with their links.
-    
-Now Browse through them and read whichever interests you. Happy Coding. :sparkles:  :)
+* Install Selenium python package and firefox webdriver for suitable version of Linux from [here](https://github.com/mozilla/geckodriver/releases). Mention it's path in the code or place it in the same directory.
+* Open Terminal in the directory of the repository.
+  Run by typing : ``` python web_app.py ```
+* Open your browser and go to "http://127.0.0.1:1234/".
+* Choose the topic of articles you want as given in the drop-down list.
+* Choose the file format of the output, either PDF or Text.
+* Click on 'Submit' button.
+* Wait a few minutes.
+
+![Animation](/animation.gif)
+
+Now browse through the articles and read whichever interests you.
+Happy Coding. :sparkles:  :)
+

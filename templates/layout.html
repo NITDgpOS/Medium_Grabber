@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>Medium Grabber</title>
+	  <meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<style type="text/css">
+  		h1
+  		{
+  			text-align: center;
+  		}
+
+  		h2
+  		{
+  			text-align: center;
+  		}
+  	</style>
+</head>
+<body>
+	<div class="jumbotron text-center">
+  		<h1>{% block heading %}{% endblock %}</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+			{% block body %}
+			{% endblock %}
+		</div>
+	</div>
+	
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
