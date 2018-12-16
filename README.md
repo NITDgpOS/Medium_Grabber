@@ -34,7 +34,6 @@ To run this,
 * Install Selenium python package and firefox webdriver for Windows from [here](https://github.com/mozilla/geckodriver/releases). Mention it's path in the code or place it in the same directory.
 * Windows: Open command prompt and cd to the directory.
   Run by typing : ``` python -mrun web_app.py ```
-* If prompted in the terminal, enter your credentials and choose whether to save credentials or not.
 * Open your browser and go to "http://127.0.0.1:1234/".
 * Choose the topic of articles you want as given in the drop-down list.
 * Choose the file format of the output, either PDF or Text.
@@ -51,7 +50,6 @@ Now browse through the articles and read whichever interests you.
 * Install Selenium python package and firefox webdriver for suitable version of Linux from [here](https://github.com/mozilla/geckodriver/releases). Mention it's path in the code or place it in the same directory.
 * Open Terminal in the directory of the repository.
   Run by typing : ``` python web_app.py ```
-* If prompted in the terminal, enter your credentials and choose whether to save credentials or not.
 * Open your browser and go to "http://127.0.0.1:1234/".
 * Choose the topic of articles you want as given in the drop-down list.
 * Choose the file format of the output, either PDF or Text.
