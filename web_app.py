@@ -1,4 +1,3 @@
-import cred
 from Grab_that_article_on_Medium import grab
 from flask import Flask, render_template, request
 app=Flask(__name__)
