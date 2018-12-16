@@ -4,9 +4,9 @@ import os
 import os.path
 from os import listdir
 from os.path import isfile, join
+import getpass
 from Crypto import Random
 from Crypto.Cipher import AES
-
 
 class Encryptor:
     def __init__(self, key):
@@ -55,17 +55,23 @@ flag = 1 # if flag = 1, then we need to decrypt. Else no decryption needed
 if not os.path.isfile('creds.ge.enc'):  # Check if the credentials are saved
     clear()
     username = str(input("Enter your email or registered phone number: "))
-    password = str(input("Enter your password: "))
-    remember = str(input("Do you want to save your credentials? (Y/N): "))
-    if remember == 'N':
-        flag = 0
-    else:
-        f = open("creds.ge", "w+")
-        f.write(username + '\n')
-        f.write(password)
-        f.close()
-        enc.encrypt_file("creds.ge")
-        print("Credentials Saved.")
+    password = str(getpass.getpass("Enter your password: "))
+    while(1):
+        remember = str(input("Do you want to save your credentials? (Y/N): "))
+        if remember == 'N' or remember == 'n':
+            flag = 0
+            break
+        elif remember == 'Y' or remember =='y':
+            f = open("creds.ge", "w+")
+            f.write(username + '\n')
+            f.write(password)
+            f.close()
+            enc.encrypt_file("creds.ge")
+            print("Credentials Saved.")
+            break
+        else:
+            print("Wrong input chosen")
+            continue
 
 if(flag):
     enc.decrypt_file("creds.ge.enc")

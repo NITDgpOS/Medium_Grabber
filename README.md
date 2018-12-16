@@ -58,6 +58,11 @@ Now browse through the articles and read whichever interests you.
 * Click on 'Submit' button.
 * Wait a few minutes.
 
+#### NOTE (For Windows and Linux/Unix)
+
+
+* In order to remove your saved credentials, remove "creds.ge.enc" file. 
+
 ![Animation](/animation.gif)
 
 Now browse through the articles and read whichever interests you.
