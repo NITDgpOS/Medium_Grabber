@@ -55,7 +55,7 @@ flag = 1 # if flag = 1, then we need to decrypt. Else no decryption needed
 if not os.path.isfile('creds.ge.enc'):  # Check if the credentials are saved
     clear()
     username = str(input("Enter your email or registered phone number: "))
-    password = str(input("Enter your password: "))
+    password = str(getpass.getpass("Enter your password: "))
     while(1):
         remember = str(input("Do you want to save your credentials? (Y/N): "))
         if remember == 'N' or remember == 'n':
