@@ -10,6 +10,7 @@ from selenium.common.exceptions import TimeoutException
 from collections import OrderedDict
 from itertools import repeat
 from fpdf import FPDF
+from cred import username,password
 import platform
 if platform.system()=='Windows':
     import winsound
@@ -49,10 +50,8 @@ def grab():
     time.sleep(3)
     #assert "Sign in – Google accounts" in driver.title
     user = driver.find_element_by_xpath('//*[@id="identifierId"]')
-    # Enter your email or phone number as registered in Medium
-    with open('user.txt','r') as f:
-        User = f.read().replace('\n','')
-    user.send_keys(User) # Provide your email or registered phone number here
+    # fetch your email or phone number as registered in Medium
+    user.send_keys(username) # Provide your email or registered phone number here
 
     nextButton = driver.find_element_by_xpath('//*[@id="identifierNext"]/content')
     nextButton.click()
@@ -60,10 +59,8 @@ def grab():
 
     user = driver.find_element_by_xpath('//*[@id="password"]/div[1]/div/div[1]/input')
 
-    # Place just your password in the pass.txt file
-    with open('pass.txt', 'r') as f:
-        Password = f.read().replace('\n', '')
-    user.send_keys(Password)
+    # fetch your password to login
+    user.send_keys(password)
 
     LOG = driver.find_element_by_xpath('//*[@id="passwordNext"]/content').click()
     print('LOGIN SUCCESSFUL \n')
