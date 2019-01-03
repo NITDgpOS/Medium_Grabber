@@ -28,9 +28,7 @@ To run this,
 #### For Windows
 
 * Download and paste everything under the same roof.
-* Put your password in pass.txt and your Email/Phone Number in the user.txt file.
 * Install Selenium python package and firefox/chrome webdriver. Mention it's path or place it in the same directory.
-* Put your password in pass.txt and your Email/Phone Number in the space provided in the code.
 * Install Selenium python package and firefox webdriver for Windows from [here](https://github.com/mozilla/geckodriver/releases). Mention it's path in the code or place it in the same directory.
 * Windows: Open command prompt and cd to the directory.
   Run by typing : ``` python -mrun web_app.py ```
@@ -47,7 +45,6 @@ Now browse through the articles and read whichever interests you.
 
 
 * Download and paste everything under the same roof.
-* Put your password in pass.txt and your Email/Phone Number in the space provided in the code.
 * Install Selenium python package and firefox webdriver for suitable version of Linux from [here](https://github.com/mozilla/geckodriver/releases). Mention it's path in the code or place it in the same directory.
 * Open Terminal in the directory of the repository.
   Run by typing : ``` python web_app.py ```
