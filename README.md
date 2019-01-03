@@ -30,6 +30,7 @@ To run this,
 * Download and paste everything under the same roof.
 * Install Selenium python package and firefox/chrome webdriver. Mention it's path or place it in the same directory.
 * Install Selenium python package and firefox webdriver for Windows from [here](https://github.com/mozilla/geckodriver/releases). Mention it's path in the code or place it in the same directory.
+TO RUN ON WEB APP:
 * Windows: Open command prompt and cd to the directory.
   Run by typing : ``` python -mrun web_app.py ```
 * If prompted in the terminal, enter your credentials and choose whether to save credentials or not.
@@ -39,13 +40,21 @@ To run this,
 * Click on 'Submit' button.
 * Wait a few minutes. You'll be notified by a beep sound when the program finsihes running.
 
+TO RUN ON TERMINAL:
+* Windows: Open command prompt and cd to the directory.
+  Run by typing : ``` python  run_on_terminal.py ```
+* If prompted in the terminal, enter your credentials and choose whether to save credentials or not.
+* Choose the browser and topic of articles you want from the list.
+* Choose the file format of the output, either PDF or Text.
+* Wait a few minutes. You'll be notified by a beep sound when the program finsihes running.
+
 Now browse through the articles and read whichever interests you.
 
 #### For Linux/Unix
 
-
 * Download and paste everything under the same roof.
 * Install Selenium python package and firefox webdriver for suitable version of Linux from [here](https://github.com/mozilla/geckodriver/releases). Mention it's path in the code or place it in the same directory.
+TO RUN WEB APP:
 * Open Terminal in the directory of the repository.
   Run by typing : ``` python web_app.py ```
 * If prompted in the terminal, enter your credentials and choose whether to save credentials or not.
@@ -54,6 +63,17 @@ Now browse through the articles and read whichever interests you.
 * Choose the file format of the output, either PDF or Text.
 * Click on 'Submit' button.
 * Wait a few minutes.
+
+TO RUN ON TERMINAL:
+* Open Terminal in the directory of the repository.
+  Run by typing : ``` python web_app.py ```
+* If prompted in the terminal, enter your credentials and choose whether to save credentials or not.
+* Choose the browser and topic of articles you want from the list.
+* Choose the file format of the output, either PDF or Text.
+* Wait a few minutes.
+
+Now browse through the articles and read whichever interests you.
+
 
 #### NOTE (For Windows and Linux/Unix)
 
