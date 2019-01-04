@@ -22,6 +22,8 @@ This is an automated program that lets you grab the link of any article in mediu
 * Selenium (``` pip install selenium ```)
 * Web-driver to interface with the chosen browser
 * FPDF (`pip install fpdf`)
+* tkinter
+* Crypto
 
 To run this,
 
@@ -48,6 +50,12 @@ TO RUN ON TERMINAL:
 * Choose the file format of the output, either PDF or Text.
 * Wait a few minutes. You'll be notified by a beep sound when the program finsihes running.
 
+TO RUN GUI:
+* Go to the folder GUI and run UI_init.py
+* Enter your credentials in the given field and press 'Submit Button'.
+* Then choose your file format. The default format is PDF.
+* Then choose the topic of your interest and wait for the beep sound.
+
 Now browse through the articles and read whichever interests you.
 
 #### For Linux/Unix
@@ -71,6 +79,12 @@ TO RUN ON TERMINAL:
 * Choose the browser and topic of articles you want from the list.
 * Choose the file format of the output, either PDF or Text.
 * Wait a few minutes.
+
+TO RUN GUI:
+* Go to the folder GUI and run UI_init.py
+* Enter your credentials in the given field and press 'Submit Button'.
+* Then choose your file format. The default format is PDF.
+* Then choose the topic of your interest and wait for the beep sound.
 
 Now browse through the articles and read whichever interests you.
 
