@@ -96,6 +96,9 @@ Now browse through the articles and read whichever interests you.
 
 ![Animation](/animation.gif)
 
+GUI Screenshot:
+![Image](/GUI/Screenshot_GUI.png)
+
 Now browse through the articles and read whichever interests you.
 Happy Coding. :sparkles:  :)
 
