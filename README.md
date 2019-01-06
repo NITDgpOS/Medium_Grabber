@@ -96,7 +96,7 @@ Now browse through the articles and read whichever interests you.
 
 ![Animation](/animation.gif)
 
-GUI Screenshot:
+GUI:
 ![Image](/GUI/Screenshot_GUI.png)
 
 Now browse through the articles and read whichever interests you.
