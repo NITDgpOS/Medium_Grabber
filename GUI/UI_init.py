@@ -65,6 +65,9 @@ topFrame3.pack(side=TOP, fill='x')
 topFrame4 = ttk.Frame(tab1, padding=5)
 topFrame4.pack(side=TOP, fill='x')
 
+centre0 = ttk.Frame(tab1,padding=5)
+centre0.pack(fill='x')
+
 centre1 = ttk.Frame(tab1,padding=5)
 centre1.pack(fill='x')
 
@@ -96,7 +99,8 @@ text.pack(side=LEFT)
 pdf = Button(topFrame4, text='PDF',width=20, command=lambda m=1: txt_pdf_func(m))
 pdf.pack(side=LEFT)
 
-
+button0 = Button(centre1, text='HOME', width=20, command=lambda m=0: button_func(m))
+button0.pack()
 
 button1 = Button(centre1, text='TECHNOLOGY', width=14, command=lambda m=1: button_func(m))
 button1.pack(side=LEFT)
