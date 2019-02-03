@@ -1,6 +1,9 @@
+# -*- coding: utf-8 -*-
+
 from flask import request
 from selenium import webdriver
 import time
+import os
 from urllib.request import urlopen
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -30,7 +33,7 @@ def grab():
         options.add_argument('--disable-gpu')
         options.add_argument('--headless')
         options.add_argument('--incognito')        
-        driver = webdriver.Chrome(chrome_options=options)
+        driver = webdriver.Chrome(executable_path=os.path.abspath("chromedriver"), chrome_options=options)
 
 
     driver.get("https://medium.com/")
