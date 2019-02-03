@@ -1,5 +1,8 @@
+# -*- coding: utf-8 -*-
+
 from selenium import webdriver
 import time
+import os
 from urllib.request import urlopen
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -31,7 +34,7 @@ while True:
         options.add_experimental_option("excludeSwitches", ["ignore-certificate-errors"])
         options.add_argument('--disable-gpu')
         options.add_argument('--headless')
-        driver = webdriver.Chrome(chrome_options=options)
+        driver = webdriver.Chrome(executable_path=os.path.abspath("chromedriver"), chrome_options=options)
         break
     elif choice==0:
         quit()
