@@ -1,6 +1,9 @@
+# -*- coding: utf-8 -*-
+
 from flask import request
 from selenium import webdriver
-import time, os
+import time
+import os
 from urllib.request import urlopen
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -149,24 +152,6 @@ def grab():
                     f.write(tag[i].text)
                     l = tag[i].find_element_by_css_selector('a').get_attribute('href')
                     f.write('\nLink is -->   ' + str(l)  + '\n\n')
-<<<<<<< HEAD
-        else:
-            for i in range(tag_len):
-                f.write(time.strftime("%Y-%m-%d %H:%M") + '\n')
-                f.write(tag[i].text)
-                l = tag[i].find_element_by_css_selector('a').get_attribute('href')
-                f.write('\nLink is -->   ' + str(l)  + '\n\n')
-
-        f.close()
-        print('FINISHED! Please check the output.txt file for the links. Happy reading. :) ')
-
-    driver.close()
-    duration = 2500  # millisecond
-    freq = 440  # Hz
-    if platform.system()=='Windows':
-        winsound.Beep(freq, duration)
-    return txt_pdf
-=======
 
             f.close()
             print('FINISHED! Please check the output.txt file for the links. Happy reading. :) ')
@@ -177,4 +162,3 @@ def grab():
         if platform.system()=='Windows':
             winsound.Beep(freq, duration)
         return txt_pdf
->>>>>>> ffde5d19761ba886ca460c0a2e7fe8a61a7333ce
