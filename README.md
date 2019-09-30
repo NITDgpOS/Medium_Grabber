@@ -22,7 +22,7 @@ This is an automated program that lets you grab the link of any article in mediu
 * Selenium (``` pip install selenium ```)
 * Web-driver to interface with the chosen browser
 * FPDF (`pip install fpdf`)
-* tkinter
+* Tkinter
 * Crypto (``` pip install pycrypto```)
 
 To run this,
