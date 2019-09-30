@@ -100,5 +100,5 @@ GUI:
 ![Image](/GUI/Screenshot_GUI.png)
 
 Now browse through the articles and read whichever interests you.
-Happy Coding. :sparkles: 
+Happy Coding.
 
